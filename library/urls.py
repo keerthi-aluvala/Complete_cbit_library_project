@@ -13,5 +13,6 @@ urlpatterns = [
     path('it_sem4/', views.it_sem4, name='library-it-sem4'), 
     path('it_sem5/', views.it_sem5, name='library-it-sem5'), 
     path('it_sem3_DMA/',views.it_sem3_DMA, name='library-it-sem3-DMA'), 
-    
+    path('subjectview_sem3/', views.subjectview_sem3 , name='subjectview_sem3'),
+  
 ]
