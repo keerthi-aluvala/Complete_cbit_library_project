@@ -56,6 +56,33 @@ def subjectview_sem1(request):
 
 	return render(request, 'subjectview_sem1.html' ,{'sem1':sem1})
 
+def subjectview_sem2(request): 
+	M1 = subject()
+	
+
+
+	PPS = subject()
+
+		
+	sem2 = [PPS, M1]
+
+	return render(request, 'subjectview_sem2.html' ,{'sem2':sem2})
+
+
+def subjectview_sem4(request): 
+	M1 = subject()
+	
+
+
+	PPS = subject()
+
+		
+	sem4 = [PPS, M1]
+
+	return render(request, 'subjectview_sem4.html' ,{'sem4':sem4})
+
+
+
 def home(request):
 	return render(request,'home.html')
 

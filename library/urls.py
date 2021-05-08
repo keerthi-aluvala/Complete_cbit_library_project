@@ -15,5 +15,7 @@ urlpatterns = [
     path('it_sem3_DMA/',views.it_sem3_DMA, name='library-it-sem3-DMA'), 
     path('subjectview_sem3/', views.subjectview_sem3 , name='subjectview_sem3'),
     path('subjectview_sem1/', views.subjectview_sem1 , name='subjectview_sem1'),
+    path('subjectview_sem2/', views.subjectview_sem2 , name='subjectview_sem2'),
+    path('subjectview_sem4/', views.subjectview_sem4 , name='subjectview_sem4'),
   
 ]
