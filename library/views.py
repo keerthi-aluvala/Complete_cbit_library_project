@@ -37,6 +37,24 @@ def subjectview_sem3(request):
 
 	return render(request, 'subjectview_sem3.html' ,{'sem3':sem3})
 
+def subjectview_sem1(request): 
+	DMA = subject()
+	DMA.subject_name = 'DMA'
+	DMA.pdf_link1 = 'DMA_unit1.pdf'
+	DMA.pdf_link2 = 'DMA_unit2.pdf'
+	DMA.pdf_link3 = 'DMA_unit3.pdf'
+	DMA.pdf_link4 = 'DMA_unit4.pdf'
+	DMA.pdf_link5 = 'DMA_unit5.pdf'
+
+	DMA.content1 = 'Logic – Sets and Functions: Logic, Propositional equivalences – Predicates and Quantifiers – Nested Quantifiers-Rules of Inference-Sets-Set Operations, Functions.Integers: The Integers and Division, Integers and Algorithms, Applications of Number Theory'
+	DMA.content2 = 'Mathematical Reasoning, Induction, and Recursion: Proof Strategy, Sequence and Summation, Mathematical Induction, Recursive Definitions and Structural Induction, Recursive Algorithms. Counting: Basics of Counting, Pigeonhole Principle, Permutations and Combinations– Binomial Coefficients, Generalized Permutations and Combinations, Generating Permutations and Combinations.'
+	DMA.content3 = 'Advanced Counting Techniques: Recurrence Relations, Solving Linear Recurrence Relations, Divide and Conquer Algorithms and Recurrence Relations, Generating Functions, Inclusion–Exclusion, Application of Inclusion – Exclusion. Relations: Relations & their Properties, N-ary Relations and Applications, Representing Relations, Closures of Relations, Equivalence Relations, Partial Orderings.'
+	DMA.content4 = 'Algebraic Structures: Algebraic System - General Properties, semi groups, Monoids, Homomorphism, Groups, Residue arithmetic, group codes and their applications.'
+	DMA.content5 = 'Algebraic Structures: Algebraic System - General Properties, semi groups, Monoids, Homomorphism, Groups, Residue arithmetic, group codes and their applications.' 
+	
+	sem1 = [DMA]
+
+	return render(request, 'subjectview_sem1.html' ,{'sem1':sem1})
 
 def home(request):
 	return render(request,'home.html')
