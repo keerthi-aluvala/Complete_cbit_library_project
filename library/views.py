@@ -73,7 +73,6 @@ def subjectview_sem4(request):
 	M1 = subject()
 	
 
-
 	PPS = subject()
 
 		
@@ -81,6 +80,57 @@ def subjectview_sem4(request):
 
 	return render(request, 'subjectview_sem4.html' ,{'sem4':sem4})
 
+def subjectview_sem5(request): 
+	M1 = subject()
+	
+
+
+	PPS = subject()
+
+		
+	sem5 = [PPS, M1]
+
+	return render(request, 'subjectview_sem5.html' ,{'sem5':sem5})
+
+
+def subjectview_sem6(request): 
+	M1 = subject()
+	
+
+
+	PPS = subject()
+
+		
+	sem6 = [PPS, M1]
+
+	return render(request, 'subjectview_sem6.html' ,{'sem6':sem6})
+
+
+
+def subjectview_sem7(request): 
+	M1 = subject()
+	
+
+
+	PPS = subject()
+
+		
+	sem7 = [PPS, M1]
+
+	return render(request, 'subjectview_sem7.html' ,{'sem7':sem7})
+
+
+def subjectview_sem8(request): 
+	M1 = subject()
+	
+
+
+	PPS = subject()
+
+		
+	sem8 = [PPS, M1]
+
+	return render(request, 'subjectview_sem8.html' ,{'sem8':sem8})
 
 
 def home(request):
