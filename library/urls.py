@@ -17,5 +17,9 @@ urlpatterns = [
     path('subjectview_sem1/', views.subjectview_sem1 , name='subjectview_sem1'),
     path('subjectview_sem2/', views.subjectview_sem2 , name='subjectview_sem2'),
     path('subjectview_sem4/', views.subjectview_sem4 , name='subjectview_sem4'),
+    path('subjectview_sem5/', views.subjectview_sem5 , name='subjectview_sem5'),
+    path('subjectview_sem6/', views.subjectview_sem6 , name='subjectview_sem6'),
+    path('subjectview_sem7/', views.subjectview_sem7 , name='subjectview_sem7'),
+    path('subjectview_sem8/', views.subjectview_sem8 , name='subjectview_sem8'),
   
 ]
