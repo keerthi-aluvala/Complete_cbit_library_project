@@ -35,7 +35,7 @@ def subjectview_sem3(request):
 		
 	sem3 = [DMA, DSA]
 
-	return render(request, 'library/subjectview_sem3.html' ,{'sem3':sem3})
+	return render(request, 'subjectview_sem3.html' ,{'sem3':sem3})
 
 
 def home(request):
