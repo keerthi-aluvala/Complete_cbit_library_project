@@ -127,5 +127,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-#libraryitsem1_REDIRECT_URL = reverse_lazy('library:libraryitsems')
-#libraryitsem1_URL = reverse_lazy('library:libraryitsem1')
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'library-home'
+LOGIN_URL = 'login' 
