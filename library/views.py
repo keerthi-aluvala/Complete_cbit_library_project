@@ -79,26 +79,73 @@ def subjectview_sem3(request):
 	BEE.content4 = 'DC and AC Machines DC Generators: Construction, Principle of operation, EMF equation, Classification, Characteristics of shunt, series and compound generators. DC Motors: Classification, Torque equation, Characteristics, Efficiency, Speed Control of Series and Shunt Motors. Three - Phase Induction Motors: Construction, Principle of operation, Torque equation, torque-slip characteristics, Power stages, speed control of induction motors.'
 	BEE.content5 = 'Electrical Installations Electrical Wiring: Types of wires and cables, Electrical Safety precautions in handling electrical appliances, electric shock, first aid for electric shock, safety rules. Components of LT Switchgear: Switch Fuse Unit (SFU), MCB, ELCB, MCCB, Earthing, Elementary calculations for energy consumption.'
 	
-	sem3 = [DMA, DSA, BEE, BE, POM]
+	ES = subject()
+	ES.subject_name = 'ES'
+	ES.pdf_link1 = 'ES_unit1.pdf'
+	ES.pdf_link2 = 'ES_unit2.pdf'
+	ES.pdf_link3 = 'ES_unit3.pdf'
+	ES.pdf_link4 = 'ES_unit4.pdf'
+	ES.pdf_link5 = 'ES_unit5.pdf'
+
+	ES.content1 = 'Environmental Studies: Definition, Scope and importance, need for public awareness. Natural resources: Use and over utilization of Natural Resources - Water resources, Food resources, Forest resources, Mineral resources, Energy resources, Land resources.'
+	ES.content2 = 'Ecosystems: Concept of an ecosystem, structure and function of an ecosystem, role of producers, consumers and decomposers, energy flow in an ecosystem, food chains, food webs, ecological pyramids, Nutrient cycling, Bio-geo chemical cycles, Terrestrial and Aquatic ecosystems.'
+	ES.content3 = 'Biodiversity: Genetic, species and ecosystem biodiversity, Bio-geographical classification of India, India as a Mega diversity nation. Values of biodiversity, hot-spots of biodiversity, threats to biodiversity, endangered and endemic species of India, methods of conservation of biodiversity.'
+	ES.content4 = 'Environmental Pollution: Cause, effects and control measures of air pollution, water pollution, marine pollution, soil pollution, noise pollution and Solid waste management, nuclear hazards Environmental Legislations: Environment protection Act, Air, Water, Forest & Wild life Acts, issues involved in enforcement of environmental legislation, responsibilities of state and central pollution control boards.'
+	ES.content5 = 'Social issues and the environment: Water conservation methods: Rain water harvesting and watershed management, Environmental ethics, Sustainable development and Climate change: Global warming, Ozone layer depletion, forest fires, and Contemporary issues.'
+	
+	sem3 = [DMA, DSA, BEE, BE, POM, ES]
 
 	return render(request, 'subjectview_sem3.html' ,{'sem3':sem3})
 
 def subjectview_sem1(request): 
-	DMA = subject()
-	DMA.subject_name = 'DMA'
-	DMA.pdf_link1 = 'DMA_unit1.pdf'
-	DMA.pdf_link2 = 'DMA_unit2.pdf'
-	DMA.pdf_link3 = 'DMA_unit3.pdf'
-	DMA.pdf_link4 = 'DMA_unit4.pdf'
-	DMA.pdf_link5 = 'DMA_unit5.pdf'
+	ENG = subject()
+	ENG.subject_name = 'ENG'
+	ENG.pdf_link1 = 'ENG_unit1.pdf'
+	ENG.pdf_link2 = 'ENG_unit2.pdf'
+	ENG.pdf_link3 = 'ENG_unit3.pdf'
+	ENG.pdf_link4 = 'ENG_unit4.pdf'
+	ENG.pdf_link5 = 'ENG_unit5.pdf'
 
-	DMA.content1 = 'Logic – Sets and Functions: Logic, Propositional equivalences – Predicates and Quantifiers – Nested Quantifiers-Rules of Inference-Sets-Set Operations, Functions.Integers: The Integers and Division, Integers and Algorithms, Applications of Number Theory'
-	DMA.content2 = 'Mathematical Reasoning, Induction, and Recursion: Proof Strategy, Sequence and Summation, Mathematical Induction, Recursive Definitions and Structural Induction, Recursive Algorithms. Counting: Basics of Counting, Pigeonhole Principle, Permutations and Combinations– Binomial Coefficients, Generalized Permutations and Combinations, Generating Permutations and Combinations.'
-	DMA.content3 = 'Advanced Counting Techniques: Recurrence Relations, Solving Linear Recurrence Relations, Divide and Conquer Algorithms and Recurrence Relations, Generating Functions, Inclusion–Exclusion, Application of Inclusion – Exclusion. Relations: Relations & their Properties, N-ary Relations and Applications, Representing Relations, Closures of Relations, Equivalence Relations, Partial Orderings.'
-	DMA.content4 = 'Algebraic Structures: Algebraic System - General Properties, semi groups, Monoids, Homomorphism, Groups, Residue arithmetic, group codes and their applications.'
-	DMA.content5 = 'Algebraic Structures: Algebraic System - General Properties, semi groups, Monoids, Homomorphism, Groups, Residue arithmetic, group codes and their applications.' 
-	
-	sem1 = [DMA]
+	ENG.content1 = 'Understanding Communication in English: Introduction, nature and importance of communication; Process of communication; Types of communication - verbal and non-verbal; Barriers to communication; Intrapersonal and interpersonal communication; Understanding Johari Window. Vocabulary &Grammar: The concept of Word Formation; Use of appropriate prepositions and articles.'
+	ENG.content2 = 'Developing Writing Skills I: Paragraph writing. – Structure and features of a paragraph; Cohesion and coherence. Rearranging jumbled sentences. Email and Mobile etiquette. Vocabulary & Grammar: Use of cohesive devices and correct punctuation.'
+	ENG.content3 = 'Developing Writing Skills II: Précis Writing; Techniques of writing precisely. Letter Writing – Structure, format of a formal letter; Letter of request and the response Vocabulary and Grammar: Subject-verb agreement. Use of prefixes and suffixes to form derivatives. Avoiding redundancies.'
+	ENG.content4 = 'Developing Writing Skills III: Report writing – Importance, structure, elements of style of formal reports ; Writing a formal report. Vocabulary and Grammar: Avoiding ambiguity - Misplaced modifiers. Use of synonyms and antonyms.'
+	ENG.content5 = 'Developing Reading Skills: The reading process, purpose, different kinds of texts; Reading comprehension; Techniques of comprehension – skimming, scanning, drawing inferences and conclusions. Vocabulary and Grammar: Words often confused; Use of standard abbreviations.'
+
+
+
+	OSP = subject()
+	OSP.subject_name = 'OSP'
+	OSP.pdf_link1 = 'OSP_unit1.pdf'
+	OSP.pdf_link2 = 'OSP_unit2.pdf'
+	OSP.pdf_link3 = 'OSP_unit3.pdf'
+	OSP.pdf_link4 = 'OSP_unit4.pdf'
+	OSP.pdf_link5 = 'OSP_unit5.pdf'
+
+	OSP.content1 = 'Wave Optics: Huygens’ principle –Superposition of waves –Interference of light by wave front splitting and amplitude splitting–Fresnel’s biprism – Interference in thin films in reflected light– Newton’s rings– Fraunhofer diffraction from a single slit –Double slit diffraction – Rayleigh criterion for limit of resolution– Concept of N-slits–Diffraction grating and its resolving power.'
+	OSP.content2 = 'Lasers & Holography: Characteristics of lasers – Einstein’s coefficients –Amplification of light by population inversion –Different types of lasers: solid-state lasers: Ruby &Nd:YAG; gas lasers: He-Ne & CO2; semiconductor laser –Applications of lasers in engineering and medicine. Holography: Principle – Recording and reconstruction–Applications. Fiber Optics: Introduction –Construction –Principle –Propagation of light through an optical fiber – Numerical aperture and acceptance angle –Step-index and graded-index fibers –Pulse dispersion –Fiber losses–Fiber optic communication system –Applications.'
+	OSP.content3 = 'Principles of Quantum Mechanics: Introduction –Wave nature of particles – de-Broglie hypothesis – Physical significance of ψ –Time-dependent and time-independent Schrodinger equations – Born interpretation – Probability current –Wave packets –Uncertainty principle –Particle in infinite square well potential –Scattering from potential step – Potential barrier and tunneling.'
+	OSP.content4 = 'Band Theory of Solids: Salient features of free electron theory of metals (Classical and Quantum) – Fermi level –Density of states – Bloch’s theorem for particles in a periodic potential – Kronig-Penney model – Classification of solids: metals, semiconductors and insulators.'
+	OSP.content5 = 'Semiconductors: Intrinsic and extrinsic semiconductors –Charge carrier concentration in intrinsic semiconductors –Dependence of Fermi level on carrier concentration and temperature in extrinsic semiconductors (qualitative) –Carrier generation and recombination –Carrier transport: diffusion and drift – P-N junction – Thermistor – Hall effect – LED –Solar cell.'
+
+
+
+	PPS = subject()
+	PPS.subject_name ='PPS'
+	PPS.pdf_link1 = 'PPS_unit1.pdf'
+	PPS.pdf_link2 = 'PPS_unit2.pdf'
+	PPS.pdf_link3 = 'PPS_unit3.pdf'
+	PPS.pdf_link4 = 'PPS_unit4.pdf'
+	PPS.pdf_link5 = 'PPS_unit5.pdf'
+
+	PPS.content1 = 'Introduction to computers and Problem Solving: Components of a computer, Operating system, compilers, Program Development Environments, steps to solve problems, Algorithm, Flowchart / Pseudocode with examples. Introduction to programming: Programming languages and generations, categorization of high-level languages. Introduction to C: Introduction, structure of C program, keywords, identifiers, Variables, constants, I/O statements, operators, precedence, and associativity.'
+	PPS.content2 = 'Introduction to decision control statements: Selective, looping, and nested statements. Functions: Introduction, uses of functions, Function definition, declaration, passing parameters to functions, recursion, scope of variables and storage classes, Case study using functions and control statements.'
+	PPS.content3 = 'Arrays: Introduction, declaration of arrays, accessing and storage of array elements, 1-dimensional array, Searching (linear and binary search algorithms) and sorting (Selection and Bubble) algorithms, 2-D arrays, matrix operations. Strings: Introduction, strings representation, string operations with examples. Case study using arrays.'
+	PPS.content4 = 'Pointers: Understanding computer’s memory, introduction to pointers, declaration pointer variables, pointer arithmetic, pointers and strings, array of pointers, dynamic memory allocation, advantages, and drawbacks of pointers. Structures: Structure definition, initialization and accessing the members of a structure, nested structures, structures and functions, self- referential structures, unions, and enumerated data types.'
+	PPS.content5 = 'Files: Introduction to files, file operations, reading data from files, writing data to files, error handing during file operations. Preprocessor Directives: Types of preprocessor directives, examples.'
+
+
+	sem1 = [ENG, OSP, PPS]
 
 	return render(request, 'subjectview_sem1.html' ,{'sem1':sem1})
 
