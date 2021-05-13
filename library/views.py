@@ -223,7 +223,7 @@ def subjectview_sem2(request):
 	DE.content4 = 'Fourier Transorms: Fourier integral theorem (statement), Complex form of Fourier integrals. Fourier transforms, Inverse Fourier Transforms, Fourier Sine and Cosine transforms, Inverse Fourier Sine and Cosine Transforms. Properties of Fourier transforms: Linear property, change of scale property, shifting property and Modulation theorem.'
 	DE.content5 = 'Z-Transforms: Definition, some standard Z-transforms, linearity property, damping rule, shifting Un to the right, shifting Un to the left, multiplication by ‘n’, initial and final value theorems. Inverse Z-Transform: evaluation of Inverse Z-transform by Convolution theorem, partial fractions method. Z- Transform application to difference equations.'
 	
-	sem2 = [M2, CHEM, DSA, OOPS, DE]
+	sem2 = [M2, CHEM, OOPS, DE]
 
 	return render(request, 'subjectview_sem2.html' ,{'sem2':sem2})
 
