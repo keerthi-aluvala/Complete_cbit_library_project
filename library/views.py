@@ -310,41 +310,107 @@ def subjectview_sem4(request):
 	return render(request, 'subjectview_sem4.html' ,{'sem4':sem4})
 
 def subjectview_sem5(request): 
-	M1 = subject()
+	OS = subject()
+	OS.subject_name = 'OS'
+	OS.pdf_link1 = 'OS_unit1.pdf'
+	OS.pdf_link2 = 'OS_unit2.pdf'
+	OS.pdf_link3 = 'OS_unit3.pdf'
+	OS.pdf_link4 = 'OS_unit4.pdf'
+	OS.pdf_link5 = 'OS_unit5.pdf'
+
+	OS.content1 = 'Introduction: Definition of Operating System, Computer-System Organization, Computer-System Architecture, Operating-System Structure, Operating-System Operations, Process Management, Memory Management, Storage Management, Protection and Security, Computing Environments, Open-Source Operating Systems.'
+	OS.content2 = 'Process Scheduling: Basic Concepts, Scheduling Criteria, Scheduling Algorithms, Thread Scheduling, Multiple-Processor Scheduling. Synchronization: Background, The Critical-Section Problem, Peterson‘s Solution, Synchronization Hardware, Mutex Locks, Semaphores, Classic Problems of Synchronization, Monitors.'
+	OS.content3 = 'Memory Management Straegies: Background, Swapping, Contiguous Memory Allocation, Segmentation, Paging, Structure of the Page Table. Virtual Memory Management: Background, Demand Paging, Copy-on-Write, Page Replacement, Allocation of Frames, Thrashing, Memory-Mapped Files, Allocating Kernel Memory.'
+	OS.content4 = 'File-System: File Concept, Access Methods, Directory and Disk Structure, File-System Mounting, File Sharing Protection. Implementing File Systems: File-System Structure, File-System Implementation, Directory Implementation, Allocation Methods, Free-Space Management, Efficiency and Performance. '
+	OS.content5 = 'System Protection: Goals of Protection, Principles of Protection, Domain of Protection, Access Matrix, Implementation of the Access Matrix, Access Control, Revocation of Access Rights, Capability-Based Systems'
+
+
 	
+	TA = subject()
+	TA.subject_name = 'TA'
+	TA.pdf_link1 = 'TA_unit1.pdf'
+	TA.pdf_link2 = 'TA_unit2.pdf'
+	TA.pdf_link3 = 'TA_unit3.pdf'
+	TA.pdf_link4 = 'TA_unit4.pdf'
+	TA.pdf_link5 = 'TA_unit5.pdf'
 
-
-	PPS = subject()
-
-		
-	sem5 = [PPS, M1]
+	TA.content1 = 'Automata: Introduction to Finite Automata, the Central Concepts of Automata Theory: Alphabets, Strings and Languages.'
+	TA.content2 = 'Regular Expression and languages: Regular Expressions: The Operators of Regular Expressions, Building Regular Expressions. Finite Automata and Regular Expression: From DFAs to Regular Expressions, Converting DFA‘s to Regular Expressions by Eliminating States, Converting Regular Expressions to Automata, Applications of Regular Expressions, Algebraic Laws for Regular Expressions.'
+	TA.content3 = 'Context Free Grammars and Languages: Context-Free Grammars: Definition of Context Free Grammars, Derivations using a Grammar, Leftmost and Rightmost Derivation, The language of a Grammar, Parse Trees: Constructing Parse Trees, The Yield of a Parse Tree, Applications of CFGs, Ambiguity in Grammars and Languages: Ambiguous Grammars, Removing Ambiguity From Grammars, Leftmost Derivations as way to Express Ambiguity, Inherent Ambiguity.'
+	TA.content4 = 'Pushdown Automata: Definition of pushdown automaton: The Formal Definition of PDA, Graphical Notation for PDA‘s, Instantaneous Description of a PDA, The Language of a PDA.'
+	TA.content5 = 'Introduction to Turing Machines: Problems that Computer Cannot Solve: The Turing Machine: Notation for the TM, Instantaneous Descriptions for TM‘s, Transitions Diagrams, The Language of a TM, Turing Machines and Halting, Programming Techniques for Turing Machines: Storage in the State, Multiple Tracks, Subroutines.'
+    sem5 = [OS, TA]
 
 	return render(request, 'subjectview_sem5.html' ,{'sem5':sem5})
 
 
 def subjectview_sem6(request): 
-	M1 = subject()
-	
+	AI = subject()
+	AI.subject_name = 'AI'
+	AI.pdf_link1 = 'AI_unit1.pdf'
+	AI.pdf_link2 = 'AI_unit2.pdf'
+	AI.pdf_link3 = 'AI_unit3.pdf'
+	AI.pdf_link4 = 'AI_unit4.pdf'
+	AI.pdf_link5 = 'AI_unit5.pdf'
+
+	AI.content1 ='Introduction: The Foundations of AI, History of AI. Intelligent agents – Agents and Environments, Good Behavior: The Concept of Rationality, The Nature of Environments, The Structure of Agents.'
+	AI.content2 ='Logic Concepts and Logic Programming: Introduction, Propositional Calculus, Propositional Logic, Natural Deduction System, Axiomatic System, Semantic Tableau System in Propositional Logic, Resolution Refutation in Propositional Logic, Predicate Logic, Logic Programming.'
+	AI.content3 ='Quantifying Uncertainty: Acting under Uncertainty, Basic Probability Notation, Inference Using Full JointDistributions, Independence, Bayes‘ Rule and its Use. '
+	AI.content4 ='Learning from Examples: Forms of Learning, Supervised Learning, Learning Decision Trees, Evaluating and Choosing the Best Hypothesis, The Theory of Learning, Regression and Classification with Linear Models, Artificial Neural Networks, Nonparametric Models, Support Vector Machines. '
+	AI.content5 ='Natural Language Processing: Language Models, Text Classification, Information Retrieval, Information Extraction.'
 
 
-	PPS = subject()
 
-		
-	sem6 = [PPS, M1]
+	IS = subject()
+	IS.subject_name = 'IS'
+	IS.pdf_link1 = 'IS_unit1.pdf'
+	IS.pdf_link2 = 'IS_unit2.pdf'
+	IS.pdf_link3 = 'IS_unit3.pdf'
+	IS.pdf_link4 = 'IS_unit4.pdf'
+	IS.pdf_link5 = 'IS_unit5.pdf'
+
+	IS.content1 = 'Introduction to Information Security: History of Information Security, What Is Security, CNSS security model, Components of an Information System, Balancing Information Security and Access, Approaches to Information Security Implementation, Security in the Systems Life Cycle, Security Professionals and the Organization.'
+	IS.content2 = 'Risk management: An Overview of Risk Management, Risk Identification, Risk assessment, Risk Control, Quantatitive versus Qualitative Risk Management Practices, Recommended Risk Control Practices.'
+	IS.content3 = 'Cryptography: Introduction, Foundations of Cryptology, Cipher methods, cryptographic Algorithms, Cryptographic Tools, Protocols for Secure Communications.'
+	IS.content4 = 'Electronic Mail Security: Pretty Good Privacy, S/MIME, DomainKeys Identified Mail.'
+	IS.content5 = 'Information security Maintenance: Introduction, Security Management Maintenance Models, Digital Forensics.'
+	sem6 = [AI, IS]
 
 	return render(request, 'subjectview_sem6.html' ,{'sem6':sem6})
 
 
 
 def subjectview_sem7(request): 
-	M1 = subject()
+	DS = subject()
+	DS.subject_name = 'DS'
+	DS.pdf_link1 = 'DS_unit1.pdf'
+	DS.pdf_link2 = 'DS_unit2.pdf'
+	DS.pdf_link3 = 'DS_unit3.pdf'
+	DS.pdf_link4 = 'DS_unit4.pdf'
+	DS.pdf_link5 = 'DS_unit5.pdf'
+
+	DS.content1 = 'Introduction: Definition of A Distributed System; Goals- Making Resources Accessible, Distribution Transparency, Openness, Scalability; Types of Distributed Systems- Distributed Computing Systems, Distributed Information Systems, Distributed Pervasive Systems.'
+	DS.content2 = 'Processes: Threads - Introduction to Threads, Threads in Distributed Systems; Virtualization - The Role of Virtualization In Distributed Systems, Architectures of Virtual Machines; Clients- Networked User Interfaces, Client-Side Software for Distribution Transparency; Servers- General Design Issues, Server Clusters, Managing Server Clusters; Code Migration- Approaches to Code Migration, Migration and Local Resources, Migration in Heterogeneous Systems.'
+	DS.content3 = 'Naming: Names, Identifiers, and Addresses; Flat Naming- Simple Solutions, Home-Based Approaches, Distributed Hash Tables, Hierarchical Approaches; Structured Naming- Name Spaces, Name Resolution, the Implementation of a Name Space; Attribute-based Naming- Directory Services, Hierarchical Implementations: LDAP, Decentralized Implementations.'
+	DS.content4 = 'Consistency And Replication: Introduction- Reasons for Replication, Replication as Scaling Technique; Data-Centric Consistency Models- Continuous Consistency, Consistent Ordering of Operations.'
+	DS.content5 = 'Distributed Object-Based Systems: Architecture- Distributed Objects, Example: Enterprise Java Beans, Example- Globe Distributed Shared Objects; ProcessesObject Servers, Example: The Ice Runtime System; Communication- Binding a Client to an Object, Static versus Dynamic Remote Method Invocations.'
 	
 
 
-	PPS = subject()
+	BDA = subject()
+	BDA.subject_name = 'BDA'
+	BDA.pdf_link1 = 'BDA_unit1.pdf'
+	BDA.pdf_link2 = 'BDA_unit2.pdf'
+	BDA.pdf_link3 = 'BDA_unit3.pdf'
+	BDA.pdf_link4 = 'BDA_unit4.pdf'
+	BDA.pdf_link5 = 'BDA_unit5.pdf'
 
-		
-	sem7 = [PPS, M1]
+	BDA.content1 = 'Introduction to Big Data: Importance of Big Data, when to considerBig Data as a solution, Big Data use cases: IT for IT Log Analytics, the Fraud Detection Pattern, and Social Media Pattern.'
+	BDA.content2 = 'MapReduce: What is Map reduce, Architecture of map reduce.How MapReduce Works: Anatomy of a MapReduce Job Run, Job Submission, Job Initialization, Task Assignment, Task Execution, Progress and Status Updates, Job Completion.'
+	BDA.content3 = 'No SQL Databases: Review of traditional Databases, Need for NoSQL Databases, Columnar Databases, Failover and reliability principles, CAP Theorem, Differences between SQL and NoSQL databases.'
+	BDA.content4 = 'Pig: Installing and Running Pig, an Example, Generating Examples, Comparison with Databases, Pig Latin, User-Defined Functions, Data Processing Operators, Pig in Practice'
+	BDA.content5 = 'Spark:Importance of Spark Framework, Components of the Spark unified stack, Batch and Real-Time Analytics with Apache Spark, Resilient Distributed Dataset (RDD), SCALA (Object Oriented and Functional Programming).'
+	sem7 = [DS, BDA]
 
 	return render(request, 'subjectview_sem7.html' ,{'sem7':sem7})
 
