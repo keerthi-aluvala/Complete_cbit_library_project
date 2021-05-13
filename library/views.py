@@ -163,26 +163,149 @@ def subjectview_sem1(request):
 	return render(request, 'subjectview_sem1.html' ,{'sem1':sem1})
 
 def subjectview_sem2(request): 
-	M1 = subject()
+	M2 = subject()
+	M2.subject_name = 'M2'
+	M2.pdf_link1 = 'M2_unit1.pdf'
+	M2.pdf_link2 = 'M2_unit2.pdf'
+	M2.pdf_link3 = 'M2_unit3.pdf'
+	M2.pdf_link4 = 'M2_unit4.pdf'
+	M2.pdf_link5 = 'M2_unit5.pdf'
+
+	M2.content1 = 'Differential Equations of First Order: Exact Differential Equations, Equations Reducible To Exact Equations, Linear Equations, Bernoulli’s Equations, Riccati’s and Clairaut’s Equations, Orthogonal trajectories.'
+	M2.content2 = 'Higher Order Linear Differential Equations: Solutions of higher order linear equations with constants coefficients, Method of variation of parameters, solution of Cauchys homogeneous linear equation.applications: LR and LCRcircuits.'
+	M2.content3 = 'Series Solutions of Differential Equations: Ordinary point, singular point and regular singular point, Series solution when x=a is an ordinary point of the equation. Legendre’s equation, Legendre’s Polynomial of first kind (without proof), Rodrigue’s formula, orthogonality of Legendre polynomials. Bessel’s equation, Bessel’s function of the first kind of order n (without proof), recurrence formulae for Jn(x) and related problems (i.eJ0(x), J1(x), J1/2(x), J-1/2(x), J3/2 (x), J-3/2(x)).'
+	M2.content4 = 'Fourier Transorms: Fourier integral theorem (statement), Complex form of Fourier integrals. Fourier transforms, Inverse Fourier Transforms, Fourier Sine and Cosine transforms, Inverse Fourier Sine and Cosine Transforms. Properties of Fourier transforms: Linear property, change of scale property, shifting property and Modulation theorem.'
+	M2.content5 = 'Z-Transforms: Definition, some standard Z-transforms, linearity property, damping rule, shifting Un to the right, shifting Un to the left, multiplication by ‘n’, initial and final value theorems. Inverse Z-Transform: evaluation of Inverse Z-transform by Convolution theorem, partial fractions method. Z- Transform application to difference equations.'
+
+
+
+	CHEM = subject()
+	CHEM.subject_name = 'CHEM'
+	CHEM.pdf_link1 = 'CHEM_unit1.pdf'
+	CHEM.pdf_link2 = 'CHEM_unit2.pdf'
+	CHEM.pdf_link3 = 'CHEM_unit3.pdf'
+	CHEM.pdf_link4 = 'CHEM_unit4.pdf'
+	CHEM.pdf_link5 = 'CHEM_unit5.pdf'
+
+	CHEM.content1 = 'Atomic and molecular structure and Chemical Kinetics: Atomic and molecular structure: Molecular Orbital theory - atomic and molecular orbitals. Linear combination of atomic orbitals (LCAO) method. Molecular orbitals of diatomic molecules. Molecular Orbital Energy level diagrams (MOED) of diatomic molecules & molecular ions (H2 , He2+,N2 , O2 , O2 ¯ , CO, NO). Pi- molecular orbitals of benzene and its aromaticity. Chemical Kinetics: Introduction, Terms involved in kinetics: rate of reaction, order & molecularity; First order reaction-Characteristics: units of first order rate constant & its half-life period, second order reactionCharacteristics: units of second order rate constant & its half- life period. Numericals.'
+	CHEM.content2 = 'Use of free energy in chemical equilibria Use of free energy in chemical equilibria: Thermodynamic functions: Internal energy, entropy and free energy. Significance of entropy and free energy (criteria of spontaneity). Free energy and emf (Gibbs Helmholtz equations and its applications). Cell potentials, electrode potentials, – Reference electrodes (NHE, SCE)- electrochemical series. Nernst equation and its applications. Determination of pH using combined Glass & Calomel electrode. Potentiometric Acid base & Redox Titrations. Numericals.' 
+	CHEM.content3 = 'Stereochemistry: Representations of 3 dimensional structures, Types of stereoisomerism- Conformational isomerism – confirmations of n-butane (Newman and sawhorse representations), Configurational isomerism - Geometrical (cis-trans) isomerism & Optical isomerism- optical activity, Symmetry and chirality: Enantiomers (lactic acid) & Diastereomers (Tartaric acid), Absolute configurations, Sequence rules for R&S notation.'
+	CHEM.content4 = 'Hardness of water – Types, units of hardness, Disadvantages of hard water, Alkalinity and Estimation of Alkalinity of water, Boiler troubles - scales & sludge formation, causes and effects, Softening of water by lime soda process (Cold lime soda process),ion exchange method and Reverse Osmosis. Specifications of potable water & industrial water. Disinfection of water by Chlorination; break point chlorination, BOD and COD definition, Estimation (only brief procedure) and significance, Numericals'
+	CHEM.content5 = 'Introduction, Terms used in polymer science; Thermoplastic polymers (PVC) &Thermosetting polymers (Bakelite); Elastomers (Natural rubber). Conducting polymers- Definition, classification and applications. Polymers for Electronics: Polymer resists for integrated circuit fabrication, lithography and photolithography.'
+
+	OOPS = subject()
+	OOPS.subject_name = 'OOPS'
+	OOPS.pdf_link1 = 'OOPS_unit1.pdf'
+	OOPS.pdf_link2 = 'OOPS_unit2.pdf'
+	OOPS.pdf_link3 = 'OOPS_unit3.pdf'
+	OOPS.pdf_link4 = 'OOPS_unit4.pdf'
+	OOPS.pdf_link5 = 'OOPS_unit5.pdf'
+
+	OOPS.content1 = 'Introduction to Object Oriented Programming (OOP): Computer Programming and Programming Languages, Features of Object Oriented Programming, Merits and Demerits of Object, Applications of Object Oriented Programming, Differences between Popular Programming Languages'
+	OOPS.content2 = 'Decision Control Statements: Introduction to Decision Control Statements, Selection/Conditional Branching Statements, Basic Loop Structures/ Iterative Statements, Nested Loops, The break Statement, The continue Statement, The pass Statement, The else Statement used with Loops'
+	OOPS.content3 = 'Classes and Objects: Introduction, Classes and Objects, init method, Class variables, and Object variables, Public and Private Data members, calling methods from other methods, built-in class attributes, garbage collection, class methods, static methods'
+	OOPS.content4 = 'Inheritance: Introduction, Inheriting classes, Types of Inheritance, Composition or Containership or complex objects, Abstract classes and interfaces.'
+	OOPS.content5 = 'Error and Exception Handling: Introduction to errors and exceptions, Handling Exceptions, Multiple Except Blocks, Multiple Exceptions in a Single Block, Except Block Without Exception, The else Clause, Raising Exceptions, Instantiating Exceptions, Handling Exceptions in Invoked Functions, Built-in and User-defined Exceptions, The finally Block, Pre-defined Clean–up Action, Re-raising Exception, Assertions in Python GUI Programming with tkinter package'
+
+
+
+	DE = subject()
+	DE.subject_name = 'DE'
+	DE.pdf_link1 = 'DE_unit1.pdf'
+	DE.pdf_link2 = 'DE_unit2.pdf'
+	DE.pdf_link3 = 'DE_unit3.pdf'
+	DE.pdf_link4 = 'DE_unit4.pdf'
+	DE.pdf_link5 = 'DE_unit5.pdf'
+
+	DE.content1 = 'Differential Equations of First Order: Exact Differential Equations, Equations Reducible To Exact Equations, Linear Equations, Bernoulli’s Equations, Riccati’s and Clairaut’s Equations, Orthogonal trajectories.'
+	DE.content2 = 'Higher Order Linear Differential Equations: Solutions of higher order linear equations with constants coefficients, Method of variation of parameters, solution of Cauchys homogeneous linear equation.applications: LR and LCRcircuits.'
+	DE.content3 = 'Series Solutions of Differential Equations: Ordinary point, singular point and regular singular point, Series solution when x=a is an ordinary point of the equation. Legendre’s equation, Legendre’s Polynomial of first kind (without proof), Rodrigue’s formula, orthogonality of Legendre polynomials. Bessel’s equation, Bessel’s function of the first kind of order n (without proof), recurrence formulae for Jn(x) and related problems (i.eJ0(x), J1(x), J1/2(x), J-1/2(x), J3/2 (x), J-3/2(x)).'
+	DE.content4 = 'Fourier Transorms: Fourier integral theorem (statement), Complex form of Fourier integrals. Fourier transforms, Inverse Fourier Transforms, Fourier Sine and Cosine transforms, Inverse Fourier Sine and Cosine Transforms. Properties of Fourier transforms: Linear property, change of scale property, shifting property and Modulation theorem.'
+	DE.content5 = 'Z-Transforms: Definition, some standard Z-transforms, linearity property, damping rule, shifting Un to the right, shifting Un to the left, multiplication by ‘n’, initial and final value theorems. Inverse Z-Transform: evaluation of Inverse Z-transform by Convolution theorem, partial fractions method. Z- Transform application to difference equations.'
 	
-
-
-	PPS = subject()
-
-		
-	sem2 = [PPS, M1]
+	sem2 = [M2, CHEM, DSA, OOPS, DE]
 
 	return render(request, 'subjectview_sem2.html' ,{'sem2':sem2})
 
 
 def subjectview_sem4(request): 
-	M1 = subject()
+	DLCA = subject()
+	DLCA.subject_name = 'DLCA'
+	DLCA.pdf_link1 = 'DLCA_unit1.pdf'
+	DLCA.pdf_link2 = 'DLCA_unit2.pdf'
+	DLCA.pdf_link3 = 'DLCA_unit3.pdf'
+	DLCA.pdf_link4 = 'DLCA_unit4.pdf'
+	DLCA.pdf_link5 = 'DLCA_unit5.pdf'
+
+	DLCA.content1 = 'Digital Logic Circuits : Digital Computers, Logic Gates, Boolean Algebra, Map simplification, Product –of-sums Simplification, Don’t –Care Conditions, Combinational Circuits , Half-Adder, Full –Adder, Flip-Flops: SR,D,JK,T FlipFlops, Edge triggered Flip-Flops, Excitation Tables, Digital Components: Integrated circuits, Decoders. Encoders, Multiplexers.'
+	DLCA.content2 = 'Registers: Register with Parallel load, Shift Register, Counters. Data Representation: Data Types, Number Systems, Octal and Hexadecimal Numbers, Decimal Representation, Alphanumeric Representation, Complements: (r-1)’s Complement, r’s Complement, Subtraction of Unsigned Numbers, Fixed–Point Representation, Floating –Point Representation, Other Binary Codes, Error Detection Codes.'
+	DLCA.content3 = 'Central Processing Unit: General register Organization, Stack Organization: Register Stack, Memory Stack, Reverse Polish Notation, Instruction Formats: ThreeAddress Instructions, Two-Address Instructions, One-Address Instructions, Zero-Address Instructions, RISC Instructions, Addressing Modes, Data Transfer and Manipulation, Program Control, Reduced Instruction Set Computer (RISC): CISC Characteristics, RISC Characteristics'
+	DLCA.content4 = 'Input-Output Organization: Peripheral Devices: ASCII AlphanumericCharacters, Input-output Interface: I/O Bus and Interface Modules, Asynchronous Data Transfer: Strobe Control, Handshaking, Asynchronous Communication Interface, First-In- First-Out Buffer, Modes of Transfer: Interrupt-Initiated I/O, Priority Interrupt: Daisy Chaining Priority, Parallel Priority Interrupt, Priority Encoder, Direct Memory Access (DMA): DMA Controller.'
+	DLCA.content5 = 'Memory Organization: Memory Hierarchy, Main Memory: RAM and ROM Chips, Memory Address Map, Memory Connection to CPU, Auxiliary memory: Magnetic Disks, Magnetic Tapes, Associative Memory: Hardware Organization, Match Logic, Read and Write Operations, Cache Memory: Associative Mapping, Direct Mapping, Set-Associative Mapping, Virtual Memory: Address Space and Memory Space, Address Mapping using Pages, Associative Memory Page Table, Page Replacement.'
 	
 
-	PPS = subject()
 
-		
-	sem4 = [PPS, M1]
+	DBMS = subject()
+	DBMS.subject_name = 'DBMS'
+	DBMS.pdf_link1 = 'DBMS_unit1.pdf'
+	DBMS.pdf_link2 = 'DBMS_unit2.pdf'
+	DBMS.pdf_link3 = 'DBMS_unit3.pdf'
+	DBMS.pdf_link4 = 'DBMS_unit4.pdf'
+	DBMS.pdf_link5 = 'DBMS_unit5.pdf'
+
+	DBMS.content1 = 'Introduction: Database-System Applications, Purpose of Database Systems, View of Data, Database Languages, Relational Databases, Database Design, Data Storage and Querying, Transaction Management, Database Architecture, Data Mining and Information Retrieval Specialty Databases, Database Users and Administrators.'
+	DBMS.content2 = 'Introduction to the Relational Model: Structure of Relational Databases, Database Schema, Keys, Schema Diagrams, Relational Query Languages, Relational Operations.'
+	DBMS.content3 = 'Advanced SQL: Accessing SQL from a Programming Language, Functions and Procedures, Triggers, Recursive Queries, Advanced Aggregation Features.'
+	DBMS.content4 = 'Indexing and Hashing: Basic Concepts, Ordered Indices, B+ Tree Index Files, Multiple-Key Access, Static Hashing, Dynamic Hashing, Comparison of Ordered Indexing and Hashing, Bitmap Indices, Index Definition in SQL Transactions: Transaction Concept, a Simple Transaction Model, Transaction Atomicity and Durability, Transaction Isolation, Serializability, Transaction Isolation and Atomicity, Transaction Isolation Levels.'
+	DBMS.content5 = 'Concurrency Control: Lock-Based Protocols, Deadlock Handling, Multiple Granularity, Timestamp-Based Protocols, Validation-Based Protocols, Multiversion Schemes, Snapshot Isolation, Insert Operations, Delete Operations and Predicate Reads.'
+
+
+
+	JP = subject()
+	JP.subject_name = 'JP'
+	JP.pdf_link1 = 'JP_unit1.pdf'
+	JP.pdf_link2 = 'JP_unit2.pdf'
+	JP.pdf_link3 = 'JP_unit3.pdf'
+	JP.pdf_link4 = 'JP_unit4.pdf'
+	JP.pdf_link5 = 'JP_unit5.pdf'
+
+	JP.content1 = 'Introduction to Java: Objects, Classes, structure a java program, difference betweenjdk and jre, Java Primitive Types, Basic Operators, Conditional and Logical statements.'
+	JP.content2 = 'Inheritance, Interfaces and Packages in Java: Defining super / sub classes, Abstract classes, Method overriding, Interfacesand new features in latest version. Packages: Defining, Creatingand Accessing a Package, importing packages.'
+	JP.content3 = 'Exception Handling in Java: What are exceptions, Error vs. Exception, usage of try, catch, throw throws and finally clauses, writing your own exception classes, Difference between checked vs. unchecked Exceptions.'
+	JP.content4 = 'Collections: Overview of Java Collection Framework, Collection Interfaces – Collection, Set, List, Map, Commonly used Collectionclasses – ArrayList, LinkedList, HashSet, TreeSet, HashMap, TreeMap, legacy and class, Iteration over Collections – Iterator and ListIterator, Enumeration interfaces, differentiate Comparable and Comparator'
+	JP.content5 = 'GUI Design & Event Handling: Component, Container, Color,GUI Controls, Layout Managers, Introduction to Swings, Delegation Event Model, Event Classes, Source of Events, Event Listener Interfaces. Handlingbutton click, mouse and keyboard events, and Adapter classes. Writing GUI Based applications, Applets, life cycle of an Applet, Developing and running applets, passing parametersto applets'
+
+
+
+	DAA = subject()
+	DAA.subject_name = 'DAA'
+	DAA.pdf_link1 = 'DAA_unit1.pdf'
+	DAA.pdf_link2 = 'DAA_unit2.pdf'
+	DAA.pdf_link3 = 'DAA_unit3.pdf'
+	DAA.pdf_link4 = 'DAA_unit4.pdf'
+	DAA.pdf_link5 = 'DAA_unit5.pdf'
+
+	DAA.content1 = 'Introduction: Algorithm Specification, Performance analysis: Space Complexity, Time Complexity, Asymptotic Notation (O, Omega, Theta), Practical Complexities, Performance Measurement, Elementary Data Structures: Stacks and Queues, Trees, Dictionaries , Priority Queues, Sets and Disjoint Set Union'
+	DAA.content2 = 'Divide and Conquer: The general method, Finding the Maximum and Minimum, Merge Sort, Quick Sort, Selection Sort, Strassen’s Matrix Multiplication.'
+	DAA.content3 = 'Dynamic Programming: The General Method, Multistage graphs, All Pair Shortest Paths, Single Source Shortest Paths, Optimal Binary Search Trees, 0/1 Knapsack, Reliability Design, The Traveling Salesperson Problem.'
+	DAA.content4 = 'Backtracking: The General Method, 8-Queens Problem, Graph Colouring, Hamilton cycles, Knapsack Problem.'
+	DAA.content5 = 'NP-Hard and NP-Complete Problems: Basic Concepts: Non-Deterministic Algorithms, the Classes NP Hard and NP Complete. Cook’s theorem, NP-Hard Graph Problems: Node Cover Decision Problem, Chromatic Number Decision Problem, Directed Hamiltonian Cycle, Traveling Salesperson Decision Problem, NP Hard Scheduling Problems: Job Shop Scheduling.'
+
+	IC = subject()
+	IC.subject_name = 'IC'
+	IC.pdf_link1 = 'IC_unit1.pdf'
+	IC.pdf_link2 = 'IC_unit2.pdf'
+	IC.pdf_link3 = 'IC_unit3.pdf'
+	IC.pdf_link4 = 'IC_unit4.pdf'
+	IC.pdf_link5 = 'IC_unit5.pdf'
+
+	IC.content1 = 'Constitution of India: Introduction and salient features, Constitutional history. Directive Principles of State Policy - Its importance and implementation.'
+	IC.content2 = 'Union Government and its Administration:Structure of the Indian Union: Federalism, distribution of legislative and financial powers between the Union and the States. Parliamentary form of government in India. President: role, power and position'
+	IC.content3 = 'Emergency Provisions in India: National emergency, President rule, Financial emergency'
+	IC.content4 = 'Local Self Government:District’s Administration Head: Role and Importance. Municipalities: Introduction, Mayor and role of Elected Representative, CEO of Municipal Corporation.'
+	IC.content5 = 'Scheme of The Fundamental Rights & Duties: Fundamental Duties - The legal status. Scheme of The Fundamental Rights - To Equality, to certain Freedom Under Article 19, to Life And Personal Liberty Under Article 21.'
+	sem4 = [DLCA, DBMS, JP, DAA, IC]
+
 
 	return render(request, 'subjectview_sem4.html' ,{'sem4':sem4})
 
