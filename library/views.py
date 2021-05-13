@@ -340,6 +340,7 @@ def subjectview_sem5(request):
 	TA.content4 = 'Pushdown Automata: Definition of pushdown automaton: The Formal Definition of PDA, Graphical Notation for PDA‘s, Instantaneous Description of a PDA, The Language of a PDA.'
 	TA.content5 = 'Introduction to Turing Machines: Problems that Computer Cannot Solve: The Turing Machine: Notation for the TM, Instantaneous Descriptions for TM‘s, Transitions Diagrams, The Language of a TM, Turing Machines and Halting, Programming Techniques for Turing Machines: Storage in the State, Multiple Tracks, Subroutines.'
     
+	sem5 = [OS, TA]
 
 	return render(request, 'subjectview_sem5.html' ,{'sem5':sem5})
 
