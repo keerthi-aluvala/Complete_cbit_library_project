@@ -459,6 +459,12 @@ def it_sem4(request):
 def it_sem5(request):
 	return render(request,'it_sem5.html') 
 
+def it_sem6(request):
+	return render(request,'it_sem6.html') 
+
+def it_sem7(request):
+	return render(request,'it_sem7.html') 
+
 def it_sem3_DMA(request):
 	return render(request,'it_sem3_DMA.html') 
 
