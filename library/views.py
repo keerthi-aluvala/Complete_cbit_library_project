@@ -144,6 +144,19 @@ def subjectview_sem1(request):
 	PPS.content4 = 'Pointers: Understanding computer’s memory, introduction to pointers, declaration pointer variables, pointer arithmetic, pointers and strings, array of pointers, dynamic memory allocation, advantages, and drawbacks of pointers. Structures: Structure definition, initialization and accessing the members of a structure, nested structures, structures and functions, self- referential structures, unions, and enumerated data types.'
 	PPS.content5 = 'Files: Introduction to files, file operations, reading data from files, writing data to files, error handing during file operations. Preprocessor Directives: Types of preprocessor directives, examples.'
 
+	M1 = subject()
+	M1.subject_name = 'M1'
+	M1.pdf_link1 = 'M1_unit1.pdf'
+	M1.pdf_link2 = 'M1_unit2.pdf'
+	M1.pdf_link3 = 'M1_unit3.pdf'
+	M1.pdf_link4 = 'M1_unit4.pdf'
+	M1.pdf_link5 = 'M1_unit5.pdf'
+
+	M1.content1 = 'Matrices: Rank of a matrix, Echelon form, consistency of linear System of equations, Linear dependence of vectors, Eigen values, Eigenvectors, Properties of Eigen values, Cayley-Hamilton theorem, Quadratic forms, Reduction of quadratic form to canonical form by linear transformation, Nature of quadratic form.'
+    M1.content2 = 'Infinite Series: Definition of Convergence of sequence and series. Series of positive terms –Necessary condition for convergence, Comparison tests, limit form comparison test, D Alemberts Ratio test, Raabes test, Cauchys root test, alternating series, Leibnitzs rule, absolutely and conditionally convergence.'
+	M1.content3 = 'Partial Differentiation and Its Applications :Functions of two or more variables, Partial derivatives, Higher order partial derivatives, Total derivative, Differentiation of implicit functions, Jacobians, Taylor’s expansion of functions of two variables, Maxima and minima of functions of two variables.'
+	M1.content4 = 'Vector Differential Calculus: Scalar and vector point functions, vector operator Del, Gradient, Directional derivative, Divergence, Curl, Del applied twice to point functions, Del applied to product of point functions (vector identities). Applications: Irrotational fields and Solenoidal fields.'
+	M1.content5 = 'Vector Integral Calculus: Line integral, Surface integral and Volume integral. Green’s theorem in the plane, verifications of Stroke’s theorem (without proof) and Gauss’s divergence theorem (without proof).'
 
 	sem1 = [ENG, OSP, PPS]
 
