@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import subject
+from django.contrib.auth.decorators import login_required
 
 def subjectview_sem3(request): 
 	DMA = subject()
@@ -432,12 +433,15 @@ def subjectview_sem8(request):
 def home(request):
 	return render(request,'home.html')
 
+@login_required
 def it_sems(request):
 	return render(request,'it_sems.html') 
 
+@login_required
 def cse_sems(request):
 	return render(request,'cse_sems.html') 
 
+@login_required
 def ece_sems(request):
 	return render(request,'ece_sems.html') 
 
@@ -466,5 +470,25 @@ def it_sem7(request):
 	return render(request,'it_sem7.html') 
 
 def it_sem3_DMA(request):
-	return render(request,'it_sem3_DMA.html') 
+	return render(request,'it_sem3_DMA.html')
 
+def cse_sem1(request):
+	return render(request,'cse_sem1.html') 
+
+def cse_sem2(request):
+	return render(request,'cse_sem2.html')  
+
+def cse_sem3(request):
+	return render(request,'cse_sem3.html') 
+
+def cse_sem4(request):
+	return render(request,'cse_sem4.html') 
+
+def cse_sem5(request):
+	return render(request,'cse_sem5.html')  
+
+def cse_sem6(request):
+	return render(request,'cse_sem6.html') 
+
+def cse_sem7(request):
+	return render(request,'cse_sem7.html') 
