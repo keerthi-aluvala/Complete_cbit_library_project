@@ -101,11 +101,11 @@ def subjectview_sem3(request):
 def subjectview_sem1(request): 
 	ENG = subject()
 	ENG.subject_name = 'ENG'
-	ENG.pdf_link1 = 'ENG_unit1.pdf'
-	ENG.pdf_link2 = 'ENG_unit2.pdf'
-	ENG.pdf_link3 = 'ENG_unit3.pdf'
-	ENG.pdf_link4 = 'ENG_unit4.pdf'
-	ENG.pdf_link5 = 'ENG_unit5.pdf'
+	ENG.pdf_link1 = 'Default.pdf'
+	ENG.pdf_link2 = 'Default.pdf'
+	ENG.pdf_link3 = 'Default.pdf'
+	ENG.pdf_link4 = 'Default.pdf'
+	ENG.pdf_link5 = 'Default.pdf'
 
 	ENG.content1 = 'Understanding Communication in English: Introduction, nature and importance of communication; Process of communication; Types of communication - verbal and non-verbal; Barriers to communication; Intrapersonal and interpersonal communication; Understanding Johari Window. Vocabulary &Grammar: The concept of Word Formation; Use of appropriate prepositions and articles.'
 	ENG.content2 = 'Developing Writing Skills I: Paragraph writing. – Structure and features of a paragraph; Cohesion and coherence. Rearranging jumbled sentences. Email and Mobile etiquette. Vocabulary & Grammar: Use of cohesive devices and correct punctuation.'
@@ -117,11 +117,11 @@ def subjectview_sem1(request):
 
 	OSP = subject()
 	OSP.subject_name = 'OSP'
-	OSP.pdf_link1 = 'OSP_unit1.pdf'
-	OSP.pdf_link2 = 'OSP_unit2.pdf'
-	OSP.pdf_link3 = 'OSP_unit3.pdf'
-	OSP.pdf_link4 = 'OSP_unit4.pdf'
-	OSP.pdf_link5 = 'OSP_unit5.pdf'
+	OSP.pdf_link1 = 'Default.pdf'
+	OSP.pdf_link2 = 'Default.pdf'
+	OSP.pdf_link3 = 'Default.pdf'
+	OSP.pdf_link4 = 'Default.pdf'
+	OSP.pdf_link5 = 'Default.pdf'
 
 	OSP.content1 = 'Wave Optics: Huygens’ principle –Superposition of waves –Interference of light by wave front splitting and amplitude splitting–Fresnel’s biprism – Interference in thin films in reflected light– Newton’s rings– Fraunhofer diffraction from a single slit –Double slit diffraction – Rayleigh criterion for limit of resolution– Concept of N-slits–Diffraction grating and its resolving power.'
 	OSP.content2 = 'Lasers & Holography: Characteristics of lasers – Einstein’s coefficients –Amplification of light by population inversion –Different types of lasers: solid-state lasers: Ruby &Nd:YAG; gas lasers: He-Ne & CO2; semiconductor laser –Applications of lasers in engineering and medicine. Holography: Principle – Recording and reconstruction–Applications. Fiber Optics: Introduction –Construction –Principle –Propagation of light through an optical fiber – Numerical aperture and acceptance angle –Step-index and graded-index fibers –Pulse dispersion –Fiber losses–Fiber optic communication system –Applications.'
@@ -133,11 +133,11 @@ def subjectview_sem1(request):
 
 	PPS = subject()
 	PPS.subject_name ='PPS'
-	PPS.pdf_link1 = 'PPS_unit1.pdf'
-	PPS.pdf_link2 = 'PPS_unit2.pdf'
-	PPS.pdf_link3 = 'PPS_unit3.pdf'
-	PPS.pdf_link4 = 'PPS_unit4.pdf'
-	PPS.pdf_link5 = 'PPS_unit5.pdf'
+	PPS.pdf_link1 = 'Default.pdf'
+	PPS.pdf_link2 = 'Default.pdf'
+	PPS.pdf_link3 = 'Default.pdf'
+	PPS.pdf_link4 = 'Default.pdf'
+	PPS.pdf_link5 = 'Default.pdf'
 
 	PPS.content1 = 'Introduction to computers and Problem Solving: Components of a computer, Operating system, compilers, Program Development Environments, steps to solve problems, Algorithm, Flowchart / Pseudocode with examples. Introduction to programming: Programming languages and generations, categorization of high-level languages. Introduction to C: Introduction, structure of C program, keywords, identifiers, Variables, constants, I/O statements, operators, precedence, and associativity.'
 	PPS.content2 = 'Introduction to decision control statements: Selective, looping, and nested statements. Functions: Introduction, uses of functions, Function definition, declaration, passing parameters to functions, recursion, scope of variables and storage classes, Case study using functions and control statements.'
@@ -147,11 +147,11 @@ def subjectview_sem1(request):
 
 	M1 = subject()
 	M1.subject_name = 'M1'
-	M1.pdf_link1 = 'M1_unit1.pdf'
-	M1.pdf_link2 = 'M1_unit2.pdf'
-	M1.pdf_link3 = 'M1_unit3.pdf'
-	M1.pdf_link4 = 'M1_unit4.pdf'
-	M1.pdf_link5 = 'M1_unit5.pdf'
+	M1.pdf_link1 = 'Default.pdf'
+	M1.pdf_link2 = 'Default.pdf'
+	M1.pdf_link3 = 'Default.pdf'
+	M1.pdf_link4 = 'Default.pdf'
+	M1.pdf_link5 = 'Default.pdf'
 
 	M1.content1 = 'Matrices: Rank of a matrix, Echelon form, consistency of linear System of equations, Linear dependence of vectors, Eigen values, Eigenvectors, Properties of Eigen values, Cayley-Hamilton theorem, Quadratic forms, Reduction of quadratic form to canonical form by linear transformation, Nature of quadratic form.'
 	M1.content3 = 'Partial Differentiation and Its Applications :Functions of two or more variables, Partial derivatives, Higher order partial derivatives, Total derivative, Differentiation of implicit functions, Jacobians, Taylor’s expansion of functions of two variables, Maxima and minima of functions of two variables.'
@@ -166,11 +166,11 @@ def subjectview_sem1(request):
 def subjectview_sem2(request): 
 	M2 = subject()
 	M2.subject_name = 'M2'
-	M2.pdf_link1 = 'M2_unit1.pdf'
-	M2.pdf_link2 = 'M2_unit2.pdf'
-	M2.pdf_link3 = 'M2_unit3.pdf'
-	M2.pdf_link4 = 'M2_unit4.pdf'
-	M2.pdf_link5 = 'M2_unit5.pdf'
+	M2.pdf_link1 = 'Default.pdf'
+	M2.pdf_link2 = 'Default.pdf'
+	M2.pdf_link3 = 'Default.pdf'
+	M2.pdf_link4 = 'Default.pdf'
+	M2.pdf_link5 = 'Default.pdf'
 
 	M2.content1 = 'Differential Equations of First Order: Exact Differential Equations, Equations Reducible To Exact Equations, Linear Equations, Bernoulli’s Equations, Riccati’s and Clairaut’s Equations, Orthogonal trajectories.'
 	M2.content2 = 'Higher Order Linear Differential Equations: Solutions of higher order linear equations with constants coefficients, Method of variation of parameters, solution of Cauchys homogeneous linear equation.applications: LR and LCRcircuits.'
@@ -182,11 +182,11 @@ def subjectview_sem2(request):
 
 	CHEM = subject()
 	CHEM.subject_name = 'CHEM'
-	CHEM.pdf_link1 = 'CHEM_unit1.pdf'
-	CHEM.pdf_link2 = 'CHEM_unit2.pdf'
-	CHEM.pdf_link3 = 'CHEM_unit3.pdf'
-	CHEM.pdf_link4 = 'CHEM_unit4.pdf'
-	CHEM.pdf_link5 = 'CHEM_unit5.pdf'
+	CHEM.pdf_link1 = 'Default.pdf'
+	CHEM.pdf_link2 = 'Default.pdf'
+	CHEM.pdf_link3 = 'Default.pdf'
+	CHEM.pdf_link4 = 'Default.pdf'
+	CHEM.pdf_link5 = 'Default.pdf'
 
 	CHEM.content1 = 'Atomic and molecular structure and Chemical Kinetics: Atomic and molecular structure: Molecular Orbital theory - atomic and molecular orbitals. Linear combination of atomic orbitals (LCAO) method. Molecular orbitals of diatomic molecules. Molecular Orbital Energy level diagrams (MOED) of diatomic molecules & molecular ions (H2 , He2+,N2 , O2 , O2 ¯ , CO, NO). Pi- molecular orbitals of benzene and its aromaticity. Chemical Kinetics: Introduction, Terms involved in kinetics: rate of reaction, order & molecularity; First order reaction-Characteristics: units of first order rate constant & its half-life period, second order reactionCharacteristics: units of second order rate constant & its half- life period. Numericals.'
 	CHEM.content2 = 'Use of free energy in chemical equilibria Use of free energy in chemical equilibria: Thermodynamic functions: Internal energy, entropy and free energy. Significance of entropy and free energy (criteria of spontaneity). Free energy and emf (Gibbs Helmholtz equations and its applications). Cell potentials, electrode potentials, – Reference electrodes (NHE, SCE)- electrochemical series. Nernst equation and its applications. Determination of pH using combined Glass & Calomel electrode. Potentiometric Acid base & Redox Titrations. Numericals.' 
@@ -196,11 +196,11 @@ def subjectview_sem2(request):
 
 	OOPS = subject()
 	OOPS.subject_name = 'OOPS'
-	OOPS.pdf_link1 = 'OOPS_unit1.pdf'
-	OOPS.pdf_link2 = 'OOPS_unit2.pdf'
-	OOPS.pdf_link3 = 'OOPS_unit3.pdf'
-	OOPS.pdf_link4 = 'OOPS_unit4.pdf'
-	OOPS.pdf_link5 = 'OOPS_unit5.pdf'
+	OOPS.pdf_link1 = 'Default.pdf'
+	OOPS.pdf_link2 = 'Default.pdf'
+	OOPS.pdf_link3 = 'Default.pdf'
+	OOPS.pdf_link4 = 'Default.pdf'
+	OOPS.pdf_link5 = 'Default.pdf'
 
 	OOPS.content1 = 'Introduction to Object Oriented Programming (OOP): Computer Programming and Programming Languages, Features of Object Oriented Programming, Merits and Demerits of Object, Applications of Object Oriented Programming, Differences between Popular Programming Languages'
 	OOPS.content2 = 'Decision Control Statements: Introduction to Decision Control Statements, Selection/Conditional Branching Statements, Basic Loop Structures/ Iterative Statements, Nested Loops, The break Statement, The continue Statement, The pass Statement, The else Statement used with Loops'
@@ -212,11 +212,11 @@ def subjectview_sem2(request):
 
 	DE = subject()
 	DE.subject_name = 'DE'
-	DE.pdf_link1 = 'DE_unit1.pdf'
-	DE.pdf_link2 = 'DE_unit2.pdf'
-	DE.pdf_link3 = 'DE_unit3.pdf'
-	DE.pdf_link4 = 'DE_unit4.pdf'
-	DE.pdf_link5 = 'DE_unit5.pdf'
+	DE.pdf_link1 = 'Default.pdf'
+	DE.pdf_link2 = 'Default.pdf'
+	DE.pdf_link3 = 'Default.pdf'
+	DE.pdf_link4 = 'Default.pdf'
+	DE.pdf_link5 = 'Default.pdf'
 
 	DE.content1 = 'Differential Equations of First Order: Exact Differential Equations, Equations Reducible To Exact Equations, Linear Equations, Bernoulli’s Equations, Riccati’s and Clairaut’s Equations, Orthogonal trajectories.'
 	DE.content2 = 'Higher Order Linear Differential Equations: Solutions of higher order linear equations with constants coefficients, Method of variation of parameters, solution of Cauchys homogeneous linear equation.applications: LR and LCRcircuits.'
@@ -232,11 +232,11 @@ def subjectview_sem2(request):
 def subjectview_sem4(request): 
 	DLCA = subject()
 	DLCA.subject_name = 'DLCA'
-	DLCA.pdf_link1 = 'DLCA_unit1.pdf'
-	DLCA.pdf_link2 = 'DLCA_unit2.pdf'
-	DLCA.pdf_link3 = 'DLCA_unit3.pdf'
-	DLCA.pdf_link4 = 'DLCA_unit4.pdf'
-	DLCA.pdf_link5 = 'DLCA_unit5.pdf'
+	DLCA.pdf_link1 = 'Default.pdf'
+	DLCA.pdf_link2 = 'Default.pdf'
+	DLCA.pdf_link3 = 'Default.pdf'
+	DLCA.pdf_link4 = 'Default.pdf'
+	DLCA.pdf_link5 = 'Default.pdf'
 
 	DLCA.content1 = 'Digital Logic Circuits : Digital Computers, Logic Gates, Boolean Algebra, Map simplification, Product –of-sums Simplification, Don’t –Care Conditions, Combinational Circuits , Half-Adder, Full –Adder, Flip-Flops: SR,D,JK,T FlipFlops, Edge triggered Flip-Flops, Excitation Tables, Digital Components: Integrated circuits, Decoders. Encoders, Multiplexers.'
 	DLCA.content2 = 'Registers: Register with Parallel load, Shift Register, Counters. Data Representation: Data Types, Number Systems, Octal and Hexadecimal Numbers, Decimal Representation, Alphanumeric Representation, Complements: (r-1)’s Complement, r’s Complement, Subtraction of Unsigned Numbers, Fixed–Point Representation, Floating –Point Representation, Other Binary Codes, Error Detection Codes.'
@@ -248,11 +248,11 @@ def subjectview_sem4(request):
 
 	DBMS = subject()
 	DBMS.subject_name = 'DBMS'
-	DBMS.pdf_link1 = 'DBMS_unit1.pdf'
-	DBMS.pdf_link2 = 'DBMS_unit2.pdf'
-	DBMS.pdf_link3 = 'DBMS_unit3.pdf'
-	DBMS.pdf_link4 = 'DBMS_unit4.pdf'
-	DBMS.pdf_link5 = 'DBMS_unit5.pdf'
+	DBMS.pdf_link1 = 'Default.pdf'
+	DBMS.pdf_link2 = 'Default.pdf'
+	DBMS.pdf_link3 = 'Default.pdf'
+	DBMS.pdf_link4 = 'Default.pdf'
+	DBMS.pdf_link5 = 'Default.pdf'
 
 	DBMS.content1 = 'Introduction: Database-System Applications, Purpose of Database Systems, View of Data, Database Languages, Relational Databases, Database Design, Data Storage and Querying, Transaction Management, Database Architecture, Data Mining and Information Retrieval Specialty Databases, Database Users and Administrators.'
 	DBMS.content2 = 'Introduction to the Relational Model: Structure of Relational Databases, Database Schema, Keys, Schema Diagrams, Relational Query Languages, Relational Operations.'
@@ -264,11 +264,11 @@ def subjectview_sem4(request):
 
 	JP = subject()
 	JP.subject_name = 'JP'
-	JP.pdf_link1 = 'JP_unit1.pdf'
-	JP.pdf_link2 = 'JP_unit2.pdf'
-	JP.pdf_link3 = 'JP_unit3.pdf'
-	JP.pdf_link4 = 'JP_unit4.pdf'
-	JP.pdf_link5 = 'JP_unit5.pdf'
+	JP.pdf_link1 = 'Default.pdf'
+	JP.pdf_link2 = 'Default.pdf'
+	JP.pdf_link3 = 'Default.pdf'
+	JP.pdf_link4 = 'Default.pdf'
+	JP.pdf_link5 = 'Default.pdf'
 
 	JP.content1 = 'Introduction to Java: Objects, Classes, structure a java program, difference betweenjdk and jre, Java Primitive Types, Basic Operators, Conditional and Logical statements.'
 	JP.content2 = 'Inheritance, Interfaces and Packages in Java: Defining super / sub classes, Abstract classes, Method overriding, Interfacesand new features in latest version. Packages: Defining, Creatingand Accessing a Package, importing packages.'
@@ -280,11 +280,11 @@ def subjectview_sem4(request):
 
 	DAA = subject()
 	DAA.subject_name = 'DAA'
-	DAA.pdf_link1 = 'DAA_unit1.pdf'
-	DAA.pdf_link2 = 'DAA_unit2.pdf'
-	DAA.pdf_link3 = 'DAA_unit3.pdf'
-	DAA.pdf_link4 = 'DAA_unit4.pdf'
-	DAA.pdf_link5 = 'DAA_unit5.pdf'
+	DAA.pdf_link1 = 'Default.pdf'
+	DAA.pdf_link2 = 'Default.pdf'
+	DAA.pdf_link3 = 'Default.pdf'
+	DAA.pdf_link4 = 'Default.pdf'
+	DAA.pdf_link5 = 'Default.pdf'
 
 	DAA.content1 = 'Introduction: Algorithm Specification, Performance analysis: Space Complexity, Time Complexity, Asymptotic Notation (O, Omega, Theta), Practical Complexities, Performance Measurement, Elementary Data Structures: Stacks and Queues, Trees, Dictionaries , Priority Queues, Sets and Disjoint Set Union'
 	DAA.content2 = 'Divide and Conquer: The general method, Finding the Maximum and Minimum, Merge Sort, Quick Sort, Selection Sort, Strassen’s Matrix Multiplication.'
@@ -294,11 +294,11 @@ def subjectview_sem4(request):
 
 	IC = subject()
 	IC.subject_name = 'IC'
-	IC.pdf_link1 = 'IC_unit1.pdf'
-	IC.pdf_link2 = 'IC_unit2.pdf'
-	IC.pdf_link3 = 'IC_unit3.pdf'
-	IC.pdf_link4 = 'IC_unit4.pdf'
-	IC.pdf_link5 = 'IC_unit5.pdf'
+	IC.pdf_link1 = 'Default.pdf'
+	IC.pdf_link2 = 'Default.pdf'
+	IC.pdf_link3 = 'Default.pdf'
+	IC.pdf_link4 = 'Default.pdf'
+	IC.pdf_link5 = 'Default.pdf'
 
 	IC.content1 = 'Constitution of India: Introduction and salient features, Constitutional history. Directive Principles of State Policy - Its importance and implementation.'
 	IC.content2 = 'Union Government and its Administration:Structure of the Indian Union: Federalism, distribution of legislative and financial powers between the Union and the States. Parliamentary form of government in India. President: role, power and position'
@@ -313,11 +313,11 @@ def subjectview_sem4(request):
 def subjectview_sem5(request): 
 	OS = subject()
 	OS.subject_name = 'OS'
-	OS.pdf_link1 = 'OS_unit1.pdf'
-	OS.pdf_link2 = 'OS_unit2.pdf'
-	OS.pdf_link3 = 'OS_unit3.pdf'
-	OS.pdf_link4 = 'OS_unit4.pdf'
-	OS.pdf_link5 = 'OS_unit5.pdf'
+	OS.pdf_link1 = 'Default.pdf'
+	OS.pdf_link2 = 'Default.pdf'
+	OS.pdf_link3 = 'Default.pdf'
+	OS.pdf_link4 = 'Default.pdf'
+	OS.pdf_link5 = 'Default.pdf'
 
 	OS.content1 = 'Introduction: Definition of Operating System, Computer-System Organization, Computer-System Architecture, Operating-System Structure, Operating-System Operations, Process Management, Memory Management, Storage Management, Protection and Security, Computing Environments, Open-Source Operating Systems.'
 	OS.content2 = 'Process Scheduling: Basic Concepts, Scheduling Criteria, Scheduling Algorithms, Thread Scheduling, Multiple-Processor Scheduling. Synchronization: Background, The Critical-Section Problem, Peterson‘s Solution, Synchronization Hardware, Mutex Locks, Semaphores, Classic Problems of Synchronization, Monitors.'
@@ -329,11 +329,11 @@ def subjectview_sem5(request):
 	
 	TA = subject()
 	TA.subject_name = 'TA'
-	TA.pdf_link1 = 'TA_unit1.pdf'
-	TA.pdf_link2 = 'TA_unit2.pdf'
-	TA.pdf_link3 = 'TA_unit3.pdf'
-	TA.pdf_link4 = 'TA_unit4.pdf'
-	TA.pdf_link5 = 'TA_unit5.pdf'
+	TA.pdf_link1 = 'Default.pdf'
+	TA.pdf_link2 = 'Default.pdf'
+	TA.pdf_link3 = 'Default.pdf'
+	TA.pdf_link4 = 'Default.pdf'
+	TA.pdf_link5 = 'Default.pdf'
 
 	TA.content1 = 'Automata: Introduction to Finite Automata, the Central Concepts of Automata Theory: Alphabets, Strings and Languages.'
 	TA.content2 = 'Regular Expression and languages: Regular Expressions: The Operators of Regular Expressions, Building Regular Expressions. Finite Automata and Regular Expression: From DFAs to Regular Expressions, Converting DFA‘s to Regular Expressions by Eliminating States, Converting Regular Expressions to Automata, Applications of Regular Expressions, Algebraic Laws for Regular Expressions.'
@@ -349,11 +349,11 @@ def subjectview_sem5(request):
 def subjectview_sem6(request): 
 	AI = subject()
 	AI.subject_name = 'AI'
-	AI.pdf_link1 = 'AI_unit1.pdf'
-	AI.pdf_link2 = 'AI_unit2.pdf'
-	AI.pdf_link3 = 'AI_unit3.pdf'
-	AI.pdf_link4 = 'AI_unit4.pdf'
-	AI.pdf_link5 = 'AI_unit5.pdf'
+	AI.pdf_link1 = 'Default.pdf'
+	AI.pdf_link2 = 'Default.pdf'
+	AI.pdf_link3 = 'Default.pdf'
+	AI.pdf_link4 = 'Default.pdf'
+	AI.pdf_link5 = 'Default.pdf'
 
 	AI.content1 ='Introduction: The Foundations of AI, History of AI. Intelligent agents – Agents and Environments, Good Behavior: The Concept of Rationality, The Nature of Environments, The Structure of Agents.'
 	AI.content2 ='Logic Concepts and Logic Programming: Introduction, Propositional Calculus, Propositional Logic, Natural Deduction System, Axiomatic System, Semantic Tableau System in Propositional Logic, Resolution Refutation in Propositional Logic, Predicate Logic, Logic Programming.'
@@ -365,11 +365,11 @@ def subjectview_sem6(request):
 
 	IS = subject()
 	IS.subject_name = 'IS'
-	IS.pdf_link1 = 'IS_unit1.pdf'
-	IS.pdf_link2 = 'IS_unit2.pdf'
-	IS.pdf_link3 = 'IS_unit3.pdf'
-	IS.pdf_link4 = 'IS_unit4.pdf'
-	IS.pdf_link5 = 'IS_unit5.pdf'
+	IS.pdf_link1 = 'Default.pdf'
+	IS.pdf_link2 = 'Default.pdf'
+	IS.pdf_link3 = 'Default.pdf'
+	IS.pdf_link4 = 'Default.pdf'
+	IS.pdf_link5 = 'Default.pdf'
 
 	IS.content1 = 'Introduction to Information Security: History of Information Security, What Is Security, CNSS security model, Components of an Information System, Balancing Information Security and Access, Approaches to Information Security Implementation, Security in the Systems Life Cycle, Security Professionals and the Organization.'
 	IS.content2 = 'Risk management: An Overview of Risk Management, Risk Identification, Risk assessment, Risk Control, Quantatitive versus Qualitative Risk Management Practices, Recommended Risk Control Practices.'
@@ -385,11 +385,11 @@ def subjectview_sem6(request):
 def subjectview_sem7(request): 
 	DS = subject()
 	DS.subject_name = 'DS'
-	DS.pdf_link1 = 'DS_unit1.pdf'
-	DS.pdf_link2 = 'DS_unit2.pdf'
-	DS.pdf_link3 = 'DS_unit3.pdf'
-	DS.pdf_link4 = 'DS_unit4.pdf'
-	DS.pdf_link5 = 'DS_unit5.pdf'
+	DS.pdf_link1 = 'Default.pdf'
+	DS.pdf_link2 = 'Default.pdf'
+	DS.pdf_link3 = 'Default.pdf'
+	DS.pdf_link4 = 'Default.pdf'
+	DS.pdf_link5 = 'Default.pdf'
 
 	DS.content1 = 'Introduction: Definition of A Distributed System; Goals- Making Resources Accessible, Distribution Transparency, Openness, Scalability; Types of Distributed Systems- Distributed Computing Systems, Distributed Information Systems, Distributed Pervasive Systems.'
 	DS.content2 = 'Processes: Threads - Introduction to Threads, Threads in Distributed Systems; Virtualization - The Role of Virtualization In Distributed Systems, Architectures of Virtual Machines; Clients- Networked User Interfaces, Client-Side Software for Distribution Transparency; Servers- General Design Issues, Server Clusters, Managing Server Clusters; Code Migration- Approaches to Code Migration, Migration and Local Resources, Migration in Heterogeneous Systems.'
@@ -401,11 +401,11 @@ def subjectview_sem7(request):
 
 	BDA = subject()
 	BDA.subject_name = 'BDA'
-	BDA.pdf_link1 = 'BDA_unit1.pdf'
-	BDA.pdf_link2 = 'BDA_unit2.pdf'
-	BDA.pdf_link3 = 'BDA_unit3.pdf'
-	BDA.pdf_link4 = 'BDA_unit4.pdf'
-	BDA.pdf_link5 = 'BDA_unit5.pdf'
+	BDA.pdf_link1 = 'Default.pdf'
+	BDA.pdf_link2 = 'Default.pdf'
+	BDA.pdf_link3 = 'Default.pdf'
+	BDA.pdf_link4 = 'Default.pdf'
+	BDA.pdf_link5 = 'Default.pdf'
 
 	BDA.content1 = 'Introduction to Big Data: Importance of Big Data, when to considerBig Data as a solution, Big Data use cases: IT for IT Log Analytics, the Fraud Detection Pattern, and Social Media Pattern.'
 	BDA.content2 = 'MapReduce: What is Map reduce, Architecture of map reduce.How MapReduce Works: Anatomy of a MapReduce Job Run, Job Submission, Job Initialization, Task Assignment, Task Execution, Progress and Status Updates, Job Completion.'
@@ -492,3 +492,24 @@ def cse_sem6(request):
 
 def cse_sem7(request):
 	return render(request,'cse_sem7.html') 
+
+def ece_sem1(request):
+	return render(request,'ece_sem1.html') 
+
+def ece_sem2(request):
+	return render(request,'ece_sem2.html')  
+
+def ece_sem3(request):
+	return render(request,'ece_sem3.html') 
+
+def ece_sem4(request):
+	return render(request,'ece_sem4.html') 
+
+def ece_sem5(request):
+	return render(request,'ece_sem5.html')  
+
+def ece_sem6(request):
+	return render(request,'ece_sem6.html') 
+
+def ece_sem7(request):
+	return render(request,'ece_sem7.html') 

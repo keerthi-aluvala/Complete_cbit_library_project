@@ -14,6 +14,9 @@ body
   text-align: center;
 }
 
+.hom1{
+  z-index: 11 ;
+}
 
 .img
 {
@@ -22,10 +25,7 @@ body
   margin-right: auto;
 }
 
-.hom1
-{
-  z-index: -4;
-}
+
 
 .content-section 
 {
@@ -35,10 +35,6 @@ body
   margin-bottom: 20px;
 }
 
-.container
-{
-  z-index: -4;
-}
 
 .sidebar 
 {
